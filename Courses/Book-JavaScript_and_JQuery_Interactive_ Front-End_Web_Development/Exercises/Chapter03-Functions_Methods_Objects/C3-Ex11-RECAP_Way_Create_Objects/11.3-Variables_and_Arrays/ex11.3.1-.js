@@ -1,3 +1,0 @@
-var hotel = 'Quay';
-
-hotel;
