@@ -1,0 +1,1 @@
+No livro não tem exemplos para 1) dblclick, 2)mousedown, 3)mouseup, 4)mouseover, 5)mouseout, 6) mousemove. Então fiz esses seis exemplos extras pra praticá-los.

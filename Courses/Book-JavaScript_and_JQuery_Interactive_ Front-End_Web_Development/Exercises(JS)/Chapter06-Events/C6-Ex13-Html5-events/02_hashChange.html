@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Hashchange Estilizado</title>
+  <style>
+    /* Reset básico e tipografia */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Card principal */
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Menu de Navegação */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #eef2f5;
+      padding-bottom: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4a5568;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #edf2f7;
+      color: #2b6cb0;
+    }
+
+    /* Área do Conteúdo */
+    .content-box {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #2d3748;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #718096;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Menu com links #hash -->
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Conteúdo dinâmico que muda com o evento -->
+    <div class="content-box">
+      <h1 id="titulo">Página Inicial</h1>
+      <p id="descricao">Bem-vindo ao exemplo de navegação por hash!</p>
+    </div>
+  </div>
+
+  <script>
+    // Função para atualizar a interface com base no # da URL
+    const atualizarPagina = () => {
+      const hash = window.location.hash;
+      const titulo = document.getElementById('titulo');
+      const descricao = document.getElementById('descricao');
+
+      if (hash === '#sobre') {
+        titulo.textContent = 'Sobre Nós';
+        descricao.textContent = 'Esta é a secção onde apresentamos as informações sobre o projeto.';
+      } else if (hash === '#contacto') {
+        titulo.textContent = 'Contacto';
+        descricao.textContent = 'Envia-nos uma mensagem através dos nossos canais de apoio.';
+      } else {
+        titulo.textContent = 'Página Inicial';
+        descricao.textContent = 'Bem-vindo ao exemplo de navegação por hash!';
+      }
+    };
+
+    // Escuta a alteração do # na URL
+    window.addEventListener('hashchange', atualizarPagina);
+  </script>
+
+</body>
+</html>
