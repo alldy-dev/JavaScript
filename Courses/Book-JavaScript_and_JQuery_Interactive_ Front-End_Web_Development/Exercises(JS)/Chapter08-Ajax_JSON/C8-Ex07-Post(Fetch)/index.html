@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>New post</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Create a post</h1>
+    <form id="new-post">
+      <label>Title
+        <input name="title" required minlength="3">
+      </label>
+      <label>Text
+        <textarea name="body" rows="3" required></textarea>
+      </label>
+      <button>Send</button>
+    </form>
+    <p id="message" role="status"></p>
+    <pre id="reply" hidden></pre>
+  </main>
+  <script src="js/post.js"></script>
+</body>
+
+</html>
