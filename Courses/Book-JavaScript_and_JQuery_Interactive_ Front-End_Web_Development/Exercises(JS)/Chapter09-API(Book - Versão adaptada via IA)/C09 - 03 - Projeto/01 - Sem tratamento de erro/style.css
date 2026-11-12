@@ -1,0 +1,72 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #e1e2e2;
+    margin: 0;
+    padding: 1.5rem;
+    /* 24px */
+    color: #1f2937;
+}
+
+main {
+    max-width: 28rem;
+    /*448px*/
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5rem;
+    /* 24px */
+    border-radius: 0.6rem;
+    /* 9,6px */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+}
+
+label {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #9ca3af;
+    border-radius: 0.4rem;
+    font: inherit;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    border: 0;
+    border-radius: .4rem;
+    background: #1d4ed8;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+#aviso {
+    min-height: 1.2rem;
+    color: #b91c1c;
+    font-size: 0.9rem;
+}
+
+#resultados {
+    padding-left: 1.1rem;
+}
+
+#resultados li {
+    margin-bottom: .5rem;
+}
+
+#ultima {
+    color: #6b7280;
+    font-size: .85rem;
+}

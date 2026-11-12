@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Buscador de endereços</h1>
+        <form id="formulario">
+            <label for="uf">Estado (UF)</label>
+            <input id="uf" type="text" maxlength="2" placeholder="PA" required>
+
+        
+            <label for="cidade">Cidade</label>
+            <input id="cidade" type="text" minlength="3" placeholder="Belém">
+
+            <label for="rua">Nome da rua</label>
+            <input id="rua" type="text" placeholder="Almirante Barroso">
+
+            <button type="submit">Buscar</button>
+        </form>
+        <p id="aviso"></p>
+        <ul id="resultados"></ul>
+        <p id="ultima"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

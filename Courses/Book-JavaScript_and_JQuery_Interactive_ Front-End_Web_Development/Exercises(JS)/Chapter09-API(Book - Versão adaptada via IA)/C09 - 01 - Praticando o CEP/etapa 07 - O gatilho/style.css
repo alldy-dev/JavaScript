@@ -8,13 +8,12 @@ body {
 }
 
 form {
-    max-width: 26rem;
-    /* 416px */
-    border: 3px dotted red;
+    max-width: 22rem;
+    margin: 0 auto;
     background: #f3f4f6;
     padding: 1.5rem;
     /* 24px */
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     /* 9,6px */
     box-shadow: 7px 7px 4px rgba(0, 0, 0, .15);
 }
@@ -36,7 +35,7 @@ label {
 }
 
 input {
-    width: 70%;
+    width: 95%;
     box-sizing: border-box;
     padding: .5rem;
     margin-top: .25rem;
